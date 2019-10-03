@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+.header{
+    background: grey;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.header-logo{
+    width: 60px;
+}
+.header-buttons{
+    display: flex;
+    
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+.item{
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+}
+.item img{
+    width: 300px;
+}
+.item-title{
+    font-size: 18px;
+}
+.item-price{
+    font-size: 12px;
+}
+.item:hover{
+    cursor: pointer;
+    
+}
