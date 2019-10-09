@@ -5,7 +5,15 @@
         <link rel="stylesheet" type="text/css" href="index.css">
         <title>Kodutöö - toote leht </title>
         <script>
-            alert("Hello world!");
+            //alert("Hello world!");
+            const x = window.location;
+            console.log(x);
+            const urlParams = new URLSearchParams(window.location.search);
+            const title = urlParams.get("title");
+            const cost = urlParams.get("cost");
+            const src = urlParams.get("src");
+            console.log(title, cost, src);
+            alert(`Title: ${title} cost: ${cost} path: ${src}`);
         </script>
     </head>
     <body>
