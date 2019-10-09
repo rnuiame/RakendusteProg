@@ -1,3 +1,3 @@
 # RakendusteProg
 Rakenduste Programmeerimine 2019
-test
+Heroku: https://rp2k19.herokuapp.com
