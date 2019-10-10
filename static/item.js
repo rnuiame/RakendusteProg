@@ -1,3 +1,5 @@
+console.log("item.js loaded");
+
 //alert("Hello world!");
 const x = window.location;
 console.log(x);
