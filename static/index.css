@@ -44,7 +44,7 @@ body{
     font-size: 18 px;
     color: black;
 }
-.content a {
+.content a{
 text-decoration: none;
 }
 .itemContainer{
@@ -55,3 +55,6 @@ text-decoration: none;
 .itemContainer .item__image{
     width: 200px;
 }
+.category-wrapper{
+    padding:25px;
+} 
