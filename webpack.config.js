@@ -19,6 +19,15 @@ module.exports = {
   ],
   module: {
     rules: [
+      {
+        enforce: 'pre',
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {
+          // eslint options (if necessary)
+        },
+      },
       { 
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
