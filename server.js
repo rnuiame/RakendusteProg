@@ -6,13 +6,13 @@ const DB = require("./server/database.js");
 
 //Get all items
 
-app.get("/items", (req, res)=>{
+app.get("/api/items", (req, res)=>{
     res.json(DB.getItems())
 });
 
 //Get item with id
 
-app.get("/items/:itemId", (req, res)=>{
+app.get("/api/items/:itemId", (req, res)=>{
     res.send(DB.getItem(req.params.itemId));
 });
 
