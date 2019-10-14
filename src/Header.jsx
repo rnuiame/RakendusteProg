@@ -3,16 +3,16 @@ import {Link} from "react-router-dom";
 
 const Header = () => {
     return(
-        <div class="header">
+        <div className="header">
             <Link to={"/"}>
-                <img class="header-logo" src="/images/TLU_logo.png"/>
+                <img className="header-logo" src="/images/TLU_logo.png"/>
             </Link>
-            <div class="header-buttons">
+            <div className="header-buttons">
                 <button>Login/Signup</button>
                 <button>Cart</button>
             </div>
         </div>
-    )
+    );
 };
 
 export default Header;

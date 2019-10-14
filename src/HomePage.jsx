@@ -39,7 +39,7 @@ class HomePage extends React.PureComponent{
         this.setState({
             selectedCategory: event.target.value
         });
-    };
+    }
 
     getVisibleItems = () => {
         return this.state.items.filter( item => item.category === this.state.selectedCategory);
@@ -50,13 +50,13 @@ class HomePage extends React.PureComponent{
         return (
             <>
                 <Header/>
-                <select onChange={this.handleChange.bind(this)}>
+                <select onChange={this.handleDropdown.bind(this)}>
                     <option value="phones">Phones</option>
                     <option value="laptops">Laptops</option>
                 </select>
                 <ItemList items={this.getVisibleItems()}/>
             </>
-        )
+        );
     }
 }
 

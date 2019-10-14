@@ -14,18 +14,18 @@ class ItemPage extends React.PureComponent{
     }
 
     fetchItem = () => {
-        fetch(`/api/item/${this.props.match.params.itemId}`)
+        fetch(`/api/items/${this.props.match.params.itemId}`)
         .then(res =>{
             return res.json();
         })
-        .then(item =>{
+        .then(item => {
             console.log("item", item);
             this.setState({
                 ...item
             });
         })
-        .catch(err =>{
-            console.log("item page " ,err);
+        .catch(err => {
+            console.log("item page " , err);
         });
     }
 
@@ -42,7 +42,7 @@ class ItemPage extends React.PureComponent{
                     <div className={"item__price"}>{this.state.price}</div>
                 </div>
             </>
-        )
+        );
     }
 }
 

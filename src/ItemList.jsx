@@ -7,17 +7,17 @@ const ItemList = (props) => {
         <div className={"content"}>
             {
                 props.items.map( item => {
-                    return <Item 
+                    return (<Item 
                     key={item.id}
                     id={item.id}
                     imgSrc={item.imgSrc}
                     price={item.price}
                     title={item.title}
-                    />
+                    /> );
                 })
             }
         </div>
-    )
+    );
 };
 
 ItemList.propTypes = {
@@ -33,7 +33,7 @@ const Item = (props) => {
                 <div className="item__price">{props.price}</div>
             </div>
         </Link>
-    )
+    );
 };
 
 Item.propTypes = {
@@ -41,6 +41,6 @@ Item.propTypes = {
     imgSrc: PropTypes.string,
     title: PropTypes.string,
     price: PropTypes.string,
-}
+};
 
 export default ItemList;
