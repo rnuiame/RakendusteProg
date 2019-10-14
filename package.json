@@ -5,8 +5,7 @@
     "build": "webpack",
     "start": "node server.js",
     "start:dev": "webpack-dev-server --open --mode=\"development\"",
-    "lint": "eslint --version",
-    "postinstall": "ng build"
+    "lint": "eslint --version"
   },
   "dependencies": {
     "express": "^4.17.1",
